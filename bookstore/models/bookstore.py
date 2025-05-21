@@ -22,9 +22,7 @@ class BookDetails(models.Model):
             for record in self:
                 if record.published_date:
                     today = date.today()
-                    record.book_age = today.year - record.published_date.year - (
-                        (today.month, today.day) < (record.published_date.month, record.published_date.day)
-                    )
+                    record.book_age = today.year - record.published_date.year
                 else:
                     record.book_age = 0
         
