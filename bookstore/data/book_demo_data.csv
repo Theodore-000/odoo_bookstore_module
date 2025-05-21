@@ -1,0 +1,14 @@
+id,title,author,publisher,published_date,book_age,genre
+book1,The Great Gatsby,F. Scott Fitzgerald,Scribner,1925-04-10,99,fiction
+book2,To Kill a Mockingbird,Harper Lee,"J. B. Lippincott & Co.",1960-07-11,64,fiction
+book3,1984,George Orwell,"Secker & Warburg",1949-06-08,75,fiction
+book4,The Hobbit,J. R. R. Tolkien,Allen & Unwin,1937-09-21,87,fiction
+book5,Pride and Prejudice,Jane Austen,T. Egerton,1813-01-28,211,fiction
+book6,Sapiens,Yuval Noah Harari,Harper,2011-02-10,13,non-fiction
+book7,Atomic Habits,James Clear,Avery,2018-10-16,6,non-fiction
+book8,The Subtle Art of Not Giving a F*ck,Mark Manson,HarperOne,2016-09-13,8,non-fiction
+book9,Cosmos,Carl Sagan,Random House,1980-10-01,44,non-fiction
+book10,The Diary of a Young Girl,Anne Frank,Contact Publishing,1947-06-25,77,non-fiction
+book11,The Alchemist,Paulo Coelho,HarperTorch,1988-01-01,36,fiction
+book12,"Thinking, Fast and Slow",Daniel Kahneman,"Farrar, Straus and Giroux",2011-10-25,13,non-fiction
+book13,The Catcher in the Rye,J. D. Salinger,Little,1945-07-16,78,fiction

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem
+            id="bookstore_menu"
+            name="Book Store"
+            web_icon="bookstore, static/description/icon.png"
+            action="bookstore.action_book_detail"
+            sequence="10"/>
+    </data>
+</odoo>

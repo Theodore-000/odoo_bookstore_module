@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+    <!-- Form View -->
+    
+        <record id="book_detail_view_form" model="ir.ui.view">
+            <field name="name">book.details.view.form</field>
+            <field name="model">book.details</field>
+
+                    <field name="arch" type="xml">
+                        <form string="Book Detail Form">
+                            <sheet>
+                                <group>
+                                    <field name="title" />
+                                    <field name="author" />
+                                    <field name="publisher" />
+                                    <field name="published_date" />
+                                    <field name="book_age" />
+                                    <field name="genre" />
+                                </group>
+                            </sheet>
+                        </form>
+                    </field>
+            
+        </record>
+
+
+    <!-- List View -->
+
+        <record id="book_detail_view_tree" model="ir.ui.view">
+            <field name="name">book.details.view.tree</field>
+            <field name="model">book.details</field>
+            <field name="arch" type="xml">
+                <tree string="Book Detail Tree">
+                    <field name="title" />
+                    <field name="author" />
+                    <field name="publisher" />
+                    <field name="published_date" />
+                    <field name="book_age" />
+                    <field name="genre" />
+                </tree>
+            </field>
+        </record>
+    
+    <!-- Search View -->
+
+    <record id="book_detail_view_search" model="ir.ui.view">
+        <field name="name">book.details.view.search</field>
+        <field name="model">book.details</field>
+        <field name="arch" type="xml">
+            <search string="Book Search">
+                <filter name="fiction" string="Fiction" domain="[('genre', '=', 'fiction')]"/>
+                <filter name="non_fiction" string="Non-Fiction" domain="[('genre', '=', 'non-fiction')]"/>
+
+                <group expand="0" string="Group By">
+                    <filter name="groupby_genre" string="genre" domain="[]" context="{'group_by': 'genre'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+
+    <!-- Action -->
+    <record id="action_book_detail" model="ir.actions.act_window">
+        <field name="name">Book Detail</field>
+        <field name="res_model">book.details</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    </data>
+    
+
+</odoo>

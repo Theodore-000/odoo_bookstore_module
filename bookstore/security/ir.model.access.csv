@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_book_details,access_book_details,model_book_details,base.group_user,1,1,1,1
+access_book_details_manager,Book Details manager access,model_book_details,bookstore.group_bookstore_manager,1,1,1,1
